@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://w7.pngwing.com/pngs/899/708/png-transparent-sagar-institute-of-research-technology-modern-dental-college-research-centre-sagar-group-of-institutions-sistec-technology-electronics-text-logo.png">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins",sans-serif ;
+}
+
+body{
+    background: url(https://img.freepik.com/premium-photo/colour-smoke-background_71163-197.jpg?size=626&ext=jpg&ga=GA1.1.1485975446.1706178561&semt=ais);
+    background-size: cover;
+}
+
+#div1{
+        text-align: right;
+     }
+     ul{
+        list-style: none;
+     }
+     ul li{
+        display:inline-block;
+        font-size: 20px;
+     }
+     ul li a{
+        display:block;
+        padding: 30px 60px;
+        color:white;
+        text-decoration: none;
+     }
+     ul li a:hover{
+        color:blue;
+     }
+
+#div2{
+    margin-top: 70px;
+    width: 50%;
+    height: 70%;
+    float: right;
+    font-size: xx-large;
+    color: white;
+}
+
+#div3{
+    float: left;
+}
+form{
+    height: 350px;
+    width: 350px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 25%;
+    border: 5px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 50px 35px;
+    backdrop-filter: blur(10px);
+}
+
+form *{
+    color: white;
+    line-height: 42px;
+    outline: none;
+    border: none;
+}
+
+form h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input{
+    display: block;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder{
+    color: aliceblue;
+}
+
+.login{
+    margin-top: 20px;
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    color: black;
+    padding: 2px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+a{
+    padding: 2px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+     
+    </div>
+    <div id="div2">
+        <h1>Welcome <br>to <br>HR Management <br>System</h1>
+    </div>
+    <div id="div3">
+    <form action="login.do" method="post">
+        <h3>Login Here</h3>
+        <label for="username"><i class="fa-solid fa-envelope"></i> Username</label>
+        <input type="text" id="username"  name="username" placeholder="Username" required>
+        <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <button class="login">Log In</button>
+    </form>
+    </div>
+</body>
+</html>
